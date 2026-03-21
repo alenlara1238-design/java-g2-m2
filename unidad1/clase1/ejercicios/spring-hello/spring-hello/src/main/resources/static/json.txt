@@ -1,0 +1,74 @@
+{
+    "clave": valor                 (string, boolean, nunero, lista, objeto)
+}
+
+public class Usuario {
+     private String nombre;
+     private int edad;
+}
+
+{
+    "nombre": "Juan",
+    "edad": 25
+}
+
+
+public class Direccion {
+    private String ciudad;
+    private String pais;
+}
+
+public class Usuario{
+    private String nombre;
+    private Direccion direccion;
+}
+
+{
+    "nombre": "Ana",
+    "direccion": {
+        "ciudad": "Bogotá",
+        "pais": "Colombia"
+    }
+}
+
+
+public class Usuario {
+    private String nombre;
+    private List<String> hobbies;
+}
+
+{
+    "nombre": "Alfonso",
+    "hobbies": ["futbol", "programar c++", "jugar ping pong"]
+}
+
+####Ejemplo definitivo 
+
+public class Producto {
+    private String nombre;
+    private double precio;
+}
+
+public class Pedido {
+    private String cliente;
+    private List<Producto> productos;
+}
+
+Json de pedido:
+{
+    "cliente": "Laura",
+    "productos": [
+        {
+            "nombre": "laptop",
+            "precio": 123.0
+        }, 
+        {
+            "nombre": "mouse",
+            "precio": 12.9
+        }, 
+        {
+            "nombre": "teclado",
+            "precio": 5.0
+        }]
+}
+
